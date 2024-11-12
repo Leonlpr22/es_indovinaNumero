@@ -11,8 +11,7 @@
     <?php
 
         session_start();
-
-        // se non esistono, inizializza i contatori
+        
         if (!isset($_SESSION['tentativi'])) {
             $_SESSION['tentativi'] = 0;
             $_SESSION['indovinati'] = 0;
